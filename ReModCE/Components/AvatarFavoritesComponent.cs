@@ -503,6 +503,7 @@ namespace ReModCE.Components
 
         private void FavoriteAvatar(ApiAvatar apiAvatar)
         {
+/*        
             var isSupporter = APIUser.CurrentUser.isSupporter;
             if (!isSupporter)
             {
@@ -514,6 +515,7 @@ namespace ReModCE.Components
             
             SendAvatarRequest(hasFavorited ? HttpMethod.Delete : HttpMethod.Put, favResponse =>
             {
+*/            
                 if (!favResponse.IsSuccessStatusCode)
                 {
                     if (favResponse.StatusCode == HttpStatusCode.Unauthorized)
